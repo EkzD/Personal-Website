@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Minecraftia';
+  src: url('fonts/Minecraftia.ttf') format('truetype');
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #111;
+}
+
+.email-form h1 {
+  font-family: 'Minecraftia', monospace;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #f0f6fc;
+}
+
+.email-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  background: #222; 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border: 1px solid #30363d;
+}
+
+.email-form input,
+.email-form textarea {
+  font-family: 'Minecraftia', monospace;
+  width: 100%;
+  padding: 10px 15px;
+  background: #111;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  color: #e6edf3;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.email-form input:focus,
+.email-form textarea:focus {
+  border-color: #58a6ff;
+}
+
+.email-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.email-form button {
+  font-family: 'Minecraftia', monospace;
+  background-color: #238636;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.email-form button:hover {
+  background-color: #2ea043;
+  transform: translateY(-2px);
+}
+
+.email-form h2 {
+  padding-top: 20px;
+  color: #ffffff;
+  font-family: 'Minecraftia', monospace;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 20px;               
+  list-style: none;      
+  padding: 0;             
+  margin: 0 auto;          
+}
+
+.social-links img {
+  border-radius: 20%;
+  padding-top: 10px;
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover; 
+  transition: transform 0.3s ease; 
+}
