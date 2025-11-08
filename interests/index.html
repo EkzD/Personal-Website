@@ -1,10 +1,60 @@
 <!doctype html>
 <html>
     <head>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Syris.io </title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/interests.css/style.css">
+        <link rel="stylesheet" href="/css/interests.css/shows-&-movies.css">
     </head>
 
     <body>
-        
+        <header>
+            <nav>
+                <div class="logo"> Website Logo </div>
+                <ul class="main-nav-links">
+                    <li> <a href="/index.html"> Home </a></li>
+                    <li> <a href="/education/index.html"> Education </a></li>
+                    <li> <a href="/skills/index.html"> Skills </a></li>
+                    <li> <a href="/interests/index.html"> Interests </a></li>
+                    <li> <a href="/projects/index.html"> Projects </a></li>
+                    <li> <a href="/contact/index.html"> Contacts </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="vertical-tabs">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'shows-and-movies')"> Shows & Movies </button>
+                <button class="tablinks" onclick="openTab(event, 'music')"> Music </button>
+                <button class="tablinks" onclick="openTab(event, 'games')"> Games </button>
+                <button class="tablinks" onclick="openTab(event, 'influencers')"> Influencers </button>
+            </div>
+        </aside>
+
+        <section class="interests-content">
+            <div id="shows-and-movies" class="tabcontent">
+                <h3> shows & movies </h3>
+            </div>
+
+            <div id="music" class="tabcontent">
+                <h3> music </h3>
+            </div>
+
+            <div id="games" class="tabcontent">
+                <h3> games </h3>
+            </div>
+
+            <div id="influencers" class="tabcontent">
+                <h3> Influencers </h3>
+            </div>
+        </section>
+
+        <footer>
+            <p> ©2025 Syris All Rights Reserved </p>
+        </footer>
+        <script src="/js/vertical-tab.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>

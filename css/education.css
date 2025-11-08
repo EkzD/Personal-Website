@@ -1,0 +1,46 @@
+.education-content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 150px; 
+  gap: 0;
+  background-color: #111;
+}
+
+.edu-title {
+  text-align: center;
+  font-family: "Minecraftia";
+  flex-basis: 100%;
+  font-size: 3.5rem;
+  margin: 0 0 30px 0; 
+  color: white; 
+  font-weight: bold;
+}
+
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none; 
+  border: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.edu-card img {
+  width: 400px; 
+  height: 450px;
+  object-fit: cover; 
+  border: 2px solid #222;
+  border-radius: 6px;
+}
+
+.edu-card h2 {
+  text-align: center;
+  color: #fff;
+  font-family: "Determination";
+  font-size: 2.2rem;
+  margin-top: 10px;
+}

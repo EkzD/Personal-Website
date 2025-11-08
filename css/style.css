@@ -1,6 +1,11 @@
 @font-face {
   font-family: 'Minecraftia';
-  src: url('fonts/Minecraftia.ttf') format('truetype');
+  src: url('/assets/fonts/minecraftia/Minecraftia-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Determination";
+  src: url('/assets/fonts/pixel_operator/PixelOperator-Bold.ttf') format('truetype');
 }
 
 * {
@@ -9,7 +14,14 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #262423;
     line-height: 1.6;
 }
@@ -48,13 +60,14 @@ nav {
 }
 
 .main-nav-links a {
+  padding-top: 20px;
   position: relative;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   color: white;
   text-decoration: none;
-  font-family: 'Minecraftia', monospace;
+  font-family: "Minecraftia";
   transition: color 0.3s;
   font-size: 20px;
 }
@@ -75,4 +88,21 @@ nav {
   font-weight: bold;
   letter-spacing: 1px;
   color: #00ff7f;
+}
+
+footer {
+  background-color: #262423;
+  color: white;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 0; 
+  margin: 0; 
+}
+
+footer p {
+  margin: 0; 
+  line-height: 1; 
 }
