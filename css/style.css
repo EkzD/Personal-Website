@@ -34,7 +34,6 @@ header {
   left: 0;
   width: 100%;
   background-color: #222;
-  opacity: 95%;
   color: #fff;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -45,7 +44,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 115px;
+  height: 80px;
   background-color: #222;
   padding: 0 50px;
   position: relative;
@@ -69,7 +68,7 @@ nav {
   text-decoration: none;
   font-family: "Minecraftia";
   transition: color 0.3s;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .main-nav-links a:hover {
@@ -82,12 +81,17 @@ nav {
 }
 
 .logo {
+  background-color: #222;
+  width: 100px;
+  height: 50px;
+  background-image: url('/assets/icons/logo-removebg-preview.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -9999px; /* hide text */
+  overflow: hidden;
   position: absolute;
-  left: 50px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #00ff7f;
+  left: 1px;
 }
 
 footer {
@@ -100,8 +104,11 @@ footer {
   justify-content: center;
   padding: 0; 
   margin: 0; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;        
 }
-
 footer p {
   margin: 0; 
   line-height: 1; 

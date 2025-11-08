@@ -30,8 +30,8 @@
 }
 
 .edu-card img {
-  width: 400px; 
-  height: 450px;
+  width: 300px; 
+  height: 350px;
   object-fit: cover; 
   border: 2px solid #222;
   border-radius: 6px;
@@ -41,6 +41,6 @@
   text-align: center;
   color: #fff;
   font-family: "Determination";
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-top: 10px;
 }

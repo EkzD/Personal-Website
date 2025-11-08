@@ -4,25 +4,21 @@
 
 .vertical-tabs {
   position: fixed;       
-  top: 120px;            
-  left: 0;
-  bottom: 50px; 
-  width: 300px;          
+  top: 80px;                      
+  width: 200px;  
+  height: 100%;        
   background-color: #111; 
-  border-right: 2px solid #222;
-  padding-top: 20px;     
   display: flex;
   flex-direction: column;
-  z-index: 900;   
+  z-index: 900;
   overflow-y: auto; 
 }
-
 .vertical-tabs .tab button {
   display: block;
   background-color: transparent;
   color: #ccc;           
   padding: 25px 20px 20px 20px;
-  border: 1px solid #333;   
+  border: 2px solid #333;   
   width: 100%;
   text-align: left;
   cursor: pointer;
@@ -39,16 +35,14 @@
 
 .vertical-tabs .tab button.active {
   background-color: #238636;
-  color: #fff;
-  border-color: #238636;     
+  color: #fff;    
+  border-right-color: #111; 
 }
 
 .tabcontent {
-  position: relative; /* ensure it’s on top of normal flow */
   margin-left: 320px;       
   padding: 20px;
-  display: none; /* JS will toggle this */
+  display: none;
   color: #eee;
   font-family: "Minecraftia";
-  z-index: 1; /* lower than sidebar but above background */
 }
