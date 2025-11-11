@@ -1,33 +1,574 @@
-.home-content {
-  flex: 1;
+.hero {
   position: relative;
   width: 100%;
-  height: 300px; 
-  background-color: #111;
-  overflow: visible;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
-.home-content-text h1 {
-  font-size: 44px;
-  padding-top: 40px;
-  padding-left: 50px;
-  font-family: "Determination";
-  color: white;
-}
-
-.home-content-text p {
-  font-size: 44px;
-  padding-top: 10px;
-  padding-left: 50px;
-  font-family: "Determination";
-  color: white;
-}
-
-.cover-photo {
-  width: 100%;
-  height: 500px;
-  background-image: url('/assets/images/crossroads.jpg'); 
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/images/crossroads.jpg');
   background-size: cover;
   background-position: center;
-  border-bottom: 3px solid black;
+  filter: brightness(0.5);
+  z-index: -1;
 }
+
+.hero-content h1 {
+  font-family: "Minecraftia";
+  font-size: 3rem;
+  color: #00ff00;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-family: "Determination";
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.hero-content .btn-green {
+  padding: 12px 28px;
+  font-size: 1.2rem;
+}
+
+.about {
+  background-color: #1b1b1b;
+  padding: 80px 20px;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-avatar {
+  width: 180px;
+  height: 180px;
+  border: 4px solid white;
+  border-radius: 6px;
+  object-fit: cover;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+.about-text {
+  color: white;
+  font-family: "Determination";
+  flex: 1;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-family: "Minecraftia";
+  font-size: 2.3rem;
+  color: #00ff00;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+.featured-projects {
+  padding: 80px 20px;
+  background-color: #111;
+}
+
+.section-title {
+  font-family: "Minecraftia";
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+.project-card {
+    position: relative; 
+    width: 280px;
+    height: 250px;
+    background-color: #222;
+    border: 4px #262423;
+    border-radius: 6px;
+    overflow: hidden; 
+    text-align: center;
+    font-family: "Determination";
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 0; 
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: block;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    opacity: 0;
+}
+
+.project-overlay h4 {
+    font-family: "Minecraftia";
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+}
+
+.project-overlay p {
+    font-family: "Determination";
+    font-size: 0.9rem;
+    margin: 0 0 15px 0;
+}
+
+.project-overlay .btn-outline {
+    display: inline-block;
+    color: #00ff00;
+    font-family: "Determination";
+    border: 2px solid #00ff00;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: all 0.2s ease;
+    background-color: transparent;
+}
+
+.project-overlay .btn-outline:hover {
+    background-color: #00ff00;
+    color: #111;
+    transform: scale(1.05);
+}
+
+.project-card:hover .project-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-overlay .btn-outline {
+    margin-top: 10px;
+}
+
+.for-fun-section {
+    background-color: #1b1b1b;
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* space between header and row */
+}
+
+/* Header */
+.music-player-header {
+    text-align: center;
+    width: 100%;
+}
+
+.music-player-header h1 {
+    font-family: "Minecraftia";
+    font-size: 2.5rem;
+    color: #00ff00;
+    margin: 0 0 10px 0;
+}
+
+.music-player-header h3 {
+    font-family: "Determination";
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+}
+
+/* Row container for playlist, jukebox, and suggestions */
+.music-player {
+    display: flex;
+    flex-direction: row;  /* side by side */
+    align-items: flex-start; /* align all at the top */
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+/* Playlist container */
+.playlist-container {
+    min-width: 200px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-title {
+    font-family: "Minecraftia";
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.playlist li {
+    font-family: "Determination";
+    color: white;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.playlist li:hover,
+.playlist li.active {
+    background-color: #00ff00;
+    color: #111;
+}
+
+/* Jukebox container */
+.jukebox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.music-title {
+    font-family: "Minecraftia";
+    font-size: 2.2rem;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.music-title span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-title 5s linear infinite;
+}
+
+@keyframes scroll-title {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.jukebox-controls {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+
+.music-btn {
+    font-family: "Determination";
+    font-size: 2.2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    width: 50px;
+    text-align: center;
+}
+
+.music-btn:hover {
+    color: #00ff00;
+}
+
+.jukebox-img {
+    width: 200px;
+    height: 200px;
+    image-rendering: pixelated;
+    margin-top: 10px;
+}
+
+/* Suggestions box */
+.suggestions-box {
+    min-width: 200px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.suggestions-box h1 {
+    font-family: "Minecraftia";
+    font-size: 2rem;
+    color: #f0f6fc;
+}
+
+.suggestions-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.suggestions-box input:focus {
+    border-color: #58a6ff;
+}
+
+.suggestions-box input {
+    font-family: "Determination";
+    width: 100%;
+    padding: 12px 15px;
+    background: #111;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    color: #e6edf3;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.suggestions-box button {
+    font-family: "Minecraftia";
+    background-color: #238636;
+    color: #ffffff;
+    padding: 16px 15px 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.suggestions-box button:hover {
+    background-color: #2ea043;
+    transform: translateY(-2px);
+}
+
+
+
+.education-section {
+    background-color: #111;
+    padding: 80px 20px;
+}
+
+.edu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.edu-title {
+  text-align: center;
+  font-family: "Minecraftia";
+  flex-basis: 100%;
+  font-size: 2.5rem;
+  margin: 0 0 30px 0; 
+  color: white; 
+  font-weight: bold;
+}
+
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none; 
+  border: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.edu-card img {
+  width: 200px; 
+  height: 200px;
+  object-fit: cover; 
+  border: 2px solid #222;
+  border-radius: 6px;
+}
+
+.edu-card a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.edu-card h3 {
+  text-align: center;
+  color: #fff;
+  font-family: "Determination";
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.interests-section {
+  display: flex;
+  background-color: #1b1b1b;
+  padding: 80px 20px;
+  align-items: flex-start;
+}
+
+.interests-left {
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  min-width: 180px; 
+}
+
+.interests-left .section-title {
+  font-family: "Minecraftia";
+  font-size: 2.5rem;
+  margin-bottom: 8px; 
+}
+
+.interests-left .interests-text {
+  font-family: "Determination";
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.interest-btn {
+  text-align: center;
+  color: #00ff00;
+  font-family: "Determination";
+  border: 2px solid #00ff00;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: all 0.2s ease;
+  background-color: transparent;  
+}
+
+.interest-btn:hover {
+  background-color: #00ff00;
+  color: #111;
+  transform: scale(1.05);
+}
+
+.carousel-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.carousel-btn {
+  background-color: transparent;
+  color: white;                 
+  font-family: "Determination"; 
+  font-size: 3.5rem;              
+  cursor: pointer;
+  padding: 0;                   
+  border: none;                 
+  transition: color 0.2s ease; 
+  user-select: none;            
+}
+
+.carousel-btn:hover {
+  color: #00ff00; 
+}
+
+.interests-right {
+  flex: 1;
+  overflow: hidden;
+}
+
+.carousel-container {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease;
+}
+
+.interest-card {
+  width: 250px;
+  height: 300px;
+  background-color: #222;
+  border: 4px solid #00ff00;
+  border-radius: 6px;
+  text-align: center;
+  font-family: "Determination";
+  color: white;
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+.interest-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.interest-card h3 {
+  font-family: "Minecraftia";
+  font-size: 1.3rem;
+}
+
+.cta {
+  background-color: #111;
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 4px solid #00ff00;
+}
+
+.cta h2 {
+  font-family: "Minecraftia";
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+

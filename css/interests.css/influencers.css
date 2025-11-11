@@ -1,0 +1,57 @@
+/* Movie Card Container */
+.movie-card {
+    width: 100%;
+    aspect-ratio: 2.5 / 4;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: block;
+}
+
+/* Overlay */
+.movie-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.movie-card .overlay h4 {
+    font-family: "Minecraftia";
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.movie-card .overlay p {
+    font-family: "Determination";
+    font-size: 0.9rem;
+}
+
+/* Hover Effect */
+.movie-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+
+.movie-card:hover .overlay {
+    opacity: 1;
+}

@@ -19,4 +19,4 @@ document.addEventListener("DOMContentLoaded", function() {
   if (firstTab) {
     firstTab.click();
   }
-});
+}); 

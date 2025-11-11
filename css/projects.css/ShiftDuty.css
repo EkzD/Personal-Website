@@ -1,0 +1,98 @@
+.project-showcase {
+  width: 80%;
+  max-width: 1000px;
+  margin: 100px auto;
+  background: rgba(17, 17, 17, 0.8);
+  border: 2px solid #222;
+  border-radius: 10px;
+  padding: 30px;
+  color: #fff;
+  font-family: "Minecraftia";
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 15px;
+}
+
+.project-thumb {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #444;
+  border-radius: 6px;
+}
+
+.project-info h2 {
+  font-family: "Determination";
+  font-size: 2.3rem;
+  color: #fff;
+  margin: 0;
+}
+
+.project-genre {
+  color: #aaa;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.project-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.project-description {
+  flex: 1;
+  min-width: 280px;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Minecraftia";
+}
+
+.project-description strong {
+  color: #66ccff;
+}
+
+.project-media video {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #333;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.project-btn {
+  background-color: #222;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "Determination";
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.project-btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.project-btn.secondary {
+  background-color: #111;
+  border-color: #666;
+}

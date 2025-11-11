@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
     <head>
+        <title> Syris.dev </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Syris.io </title>
-
+        
         <link rel="shortcut icon" href="/assets/icons/logo-removebg-preview.png" type="image/x-icon">
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/home.css">
@@ -25,17 +25,204 @@
             </nav>
         </header>
 
-        <section class="home-content">
-            <div class="cover-photo"></div>
-            <div class="home-content-text">
-                <h1> * hey there! my name is Syris </h1>
-                <p> i am an aspiring programmer from the philippines</p>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1>Hello, I'm Syris</h1>
+                <p>Pixel lover. Game maker. Aspiring programmer from the Philippines.</p>
+                <a href="/projects/index.html" class="btn-green">Check My Projects</a>
             </div>
         </section>
 
+        <section class="about">
+            <div class="about-container">
+                <img src="/assets/icons/logo-removebg-preview.png" alt="Syris avatar" class="about-avatar">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        I love coding, designing pixel worlds, and turning ideas into digital experiences.
+                        When I'm not programming, I'm exploring game mechanics and building creative projects.
+
+                        I am an aspiring programmer from the Philippines and I try my best to learn something new everyday.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="/assets/images/got.jpg" alt="Battleships in C">
+                    <div class="project-overlay">
+                        <h4> Battleships in C </h4>
+                        <p> Description </p>
+                        <a href="/projects/battleshipsINCWithUi.html" class="btn-outline"> Learn More </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="/assets/images/project2" alt="2D Game in Java">
+                    <div class="project-overlay">
+                        <h4> 2D Game in Java </h4>
+                        <p> Description </p>
+                        <a href="/projects/2dRPGStyleGameInJava.html" class="btn-outline"> Learn More </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="/assets/images/project3" alt="ShiftDutyHorror">
+                    <div class="project-overlay">
+                        <h4> Shift Duty Game </h4>
+                        <p> Description </p>
+                        <a href="/projects/ShiftDutyHorror.html" class="btn-outline"> Learn More </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="for-fun-section">
+            <div class="music-player-header">
+                <h1> For Fun Project </h1>
+                <h3> will add more soon </h3>
+            </div>
+
+            <div class="music-player">
+                <div class="playlist-container">
+                    <h3 class="playlist-title">Playlist</h3>
+                    <ul class="playlist"></ul>
+                </div>
+
+                <div class="jukebox-container">
+                    <div class="music-title" id="track-title">Chill Pixel Beat</div>
+
+                    <div class="jukebox-controls">
+                        <button class="music-btn" id="prev">⏮</button>
+                        <button class="music-btn" id="play">▶</button>
+                        <button class="music-btn" id="next">⏭</button>
+                    </div>
+                    <img src="/assets/images/jukebox.png" alt="Minecraft Jukebox" class="jukebox-img">
+                    <audio id="audio"></audio>
+                </div>
+
+                <div class="suggestions-box">
+                    <h1> Suggest songs here </h1>
+                    <form action="https://formspree.io/f/xjkjbbao" method="POST" autocomplete="off">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <input type="text" name="Song" placeholder="Song Title" required>
+                        <input type="text" name="Artist" placeholder="Artist Name">
+                        <button type="submit"> Send </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="education-section">
+            <h2 class="section-title">Education Journey</h2>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <a href="https://www.facebook.com/necahemmanuelacademyvalencia" target="_blank">
+                        <img src="/assets/images/neai.jpg">
+                    </a>
+                    <h3>Elementary</h3>
+                </div>
+
+                <div class="edu-card">
+                    <a href="https://www.facebook.com/snadimiaobohol/" target="_blank">
+                        <img src="/assets/images/sna.png">
+                    </a>
+                    <h3> Junior Highschool </h3>
+                </div>
+
+                <div class="edu-card">
+                    <a href="https://www.cvifbohol.com/" target="_blank">
+                        <img src="/assets/images/cvif.jpg">
+                    </a>
+                    <h3> Senior Highschool </h3>
+                </div>
+
+                <div class="edu-card">
+                    <a href="https://hnu.edu.ph/" target="_blank">
+                        <img src="/assets/images/hnu.jpg">
+                    </a>
+                    <h3> College </h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="interests-section">
+            <div class="interests-left">
+                <h2 class="section-title">Interests</h2>
+                <span class="interests-text">
+                    <p> I have always been amazed by a lot of things even as a kid. </p>
+                    <p> You can check what other stuff I am interested in </p>
+                </span>
+                <a href="/interests/index.html" class="interest-btn"> See more </a>
+                <div class="carousel-buttons">
+                <button class="carousel-btn up-btn">&#10094;</button>
+                <button class="carousel-btn down-btn">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="interests-right">
+                <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="interest-card">
+                    <img src="/assets/images/project1.png" alt="Block Builder">
+                    <h3>Block Builder</h3>
+                    </div>
+                    <div class="interest-card">
+                    <img src="/assets/images/project2.png" alt="Pixel Portal">
+                    <h3>Pixel Portal</h3>
+                    </div>
+                    <div class="interest-card">
+                    <img src="/assets/images/project3.png" alt="CodeCraft">
+                    <h3>CodeCraft</h3>
+                    </div>
+                    <div class="interest-card">
+                    <img src="/assets/images/project4.png" alt="Shift Duty Game">
+                    <h3>Shift Duty Game</h3>
+                    </div>
+                    <div class="interest-card">
+                    <img src="/assets/images/project4.png" alt="Shift Duty Game">
+                    <h3>Shift Duty Game</h3>
+                    </div>
+                    <div class="interest-card">
+                    <img src="/assets/images/project4.png" alt="Shift Duty Game">
+                    <h3>Shift Duty Game</h3>
+                    </div>
+                    <div class="interest-card">
+                    <img src="/assets/images/project4.png" alt="Shift Duty Game">
+                    <h3>Shift Duty Game</h3>
+                    </div>
+                    <div class="interest-card">
+                    <img src="/assets/images/project4.png" alt="Shift Duty Game">
+                    <h3>Shift Duty Game</h3>
+                    </div>
+                    <div class="interest-card">
+                    <img src="/assets/images/project4.png" alt="Shift Duty Game">
+                    <h3>Shift Duty Game</h3>
+                    </div>
+                    <!-- Add more cards here -->
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <section class="cta">
+            <h2>Let’s Build Something Awesome Together ⚒️</h2>
+            <a href="/contact/index.html" class="btn-green">Contact Me</a>
+        </section>
+
         <footer>
-            <p> ©2025 Syris All Rights Reserved </p>
+            <p>©2025 Syris All Rights Reserved</p>
         </footer>
+
+        <script src="/js/music-player.js"></script>
+        <script src="/js/horizontal-carousel.js"></script>
         <script src="/js/main.js"></script>
     </body>
 </html>

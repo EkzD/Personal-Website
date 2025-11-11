@@ -32,7 +32,7 @@
 .email-form textarea {
   font-family: "Minecraftia";
   width: 100%;
-  padding: 10px 15px;
+  padding: 12px 15px;
   background: #111;
   border: 1px solid #30363d;
   border-radius: 5px;
@@ -56,7 +56,7 @@
   font-family: "MInecraftia";
   background-color: #238636;
   color: #ffffff;
-  padding: 12px 15px 8px 15px;
+  padding: 16px 15px 8px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -87,8 +87,7 @@
 }
 
 .social-links img {
-  border-radius: 20%;
-  padding-top: 10px;
+  border-radius: 10%;
   width: 80px; 
   height: 80px; 
   object-fit: cover; 
