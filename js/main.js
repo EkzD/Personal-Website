@@ -1,17 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("nav a");
-  const currentPage = window.location.pathname;
+const links = document.querySelectorAll('nav a');
 
-  links.forEach(link => {
-    const href = link.getAttribute("href");
-    if (href === currentPage) {
-      link.classList.add("active");
-      link.style.pointerEvents = "none";
-      link.style.cursor = "default";
-    }
-  });
+links.forEach(link => {
+  const linkPath = new URL(link.href).pathname; 
+  const currentPath = window.location.pathname; 
+
+  if ((currentPath === '/' && linkPath === '/index.html') || linkPath === currentPath) {
+    link.classList.add('active');
+  } else {
+    link.classList.remove('active');
+  }
 });
-
 document.addEventListener("DOMContentLoaded", () => {
   const progresses = document.querySelectorAll(".progress");
 
