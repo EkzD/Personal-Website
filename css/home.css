@@ -228,11 +228,9 @@ justify-content: center;
 gap: 40px;
 width: 100%;
 flex-wrap: wrap; 
-margin-left: 200px;
 }
 
 .playlist-container {
-margin-left: -200px;
 margin-right: 50px;
 min-width: 200px;
 max-width: 500px;
@@ -452,7 +450,6 @@ align-items: flex-start;
 .interests-left {
 align-items: flex-start;
 text-align: left;
-margin-left: 50px;
 display: flex;
 flex-direction: column;
 min-width: 180px; 
@@ -496,7 +493,6 @@ display: flex;
 flex-direction: row;
 gap: 100px;
 margin-top: 20px;
-margin-left: 100px;
 }
 
 .carousel-btn {
