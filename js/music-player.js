@@ -6,11 +6,12 @@ const trackTitle = document.getElementById("track-title");
 
 const playlist = [
     { title: "Multo - Cup of Joe", src: "/assets/mp3/Multo - Cup Of Joe (AI Villager Cover) Music Video [hlq8VEG1R4E].mp3" },
-    { title: "Multo - Cup of Joe", src: "/assets/music/lofi2.mp3" },
-    { title: "Lofi Track 3", src: "/assets/music/lofi3.mp3" },
-    { title: "Lofi Track 3", src: "/assets/music/lofi3.mp3" },
-    { title: "Lofi Track 3", src: "/assets/music/lofi3.mp3"} ,
-    { title: "Lofi Track 3", src: "/assets/music/lofi3.mp3"}
+    { title: "Take Back the Might - Justin Timberlake", src: "assets/mp3/_Take Back the Night_ - A Minecraft Original Music Video [Kwwl9jiJ1A4].mp3" },
+    { title: "A Little Death - The Neighborhood", src: "assets/mp3/The Neighbourhood - A Little Death (Official Audio) [bRfMwoIizTQ].mp3" },
+    { title: "Let it Happen - Tame Impala", src: "assets/mp3/Tame Impala - Let It Happen (Official Video) [pFptt7Cargc].mp3" },
+    { title: "Let Down - Radiohead", src: "assets/mp3/Radiohead - Let Down [-Z_NvVMUcG8].mp3"} ,
+    { title: "Time to Pretend - MGMT", src: "assets/mp3/MGMT - Time to Pretend (Official HD Video) [B9dSYgd5Elk].mp3"},
+    { title: "Loving Machine - TV Girl", src: "assets/mp3/Loving Machine [5tpQaCAq6Qc].mp3"}
 ];
 
 let currentTrack = 0;

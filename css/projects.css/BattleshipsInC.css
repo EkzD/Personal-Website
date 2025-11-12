@@ -30,7 +30,7 @@
 
 .tools-logos img {
   width: 50px;
-  height: 50;
+  height: 50    ;
   object-fit: contain;
   image-rendering: pixelated;
 }

@@ -23,3 +23,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 200); 
   });
 });
+
+const cards = document.querySelectorAll('.interest-card');
+
+cards.forEach(card => {
+    const slides = JSON.parse(card.dataset.slides);
+    let currentIndex = 0;
+    const img = card.querySelector('img');
+
+    let interval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        img.src = slides[currentIndex];
+    }, 2000);
+
+
+    card.addEventListener('mouseenter', () => clearInterval(interval));
+    card.addEventListener('mouseleave', () => {
+        interval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            img.src = slides[currentIndex];
+        }, 2000);
+    });
+});
+
