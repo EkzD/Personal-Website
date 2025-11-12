@@ -61,7 +61,7 @@
 .project-status {
   font-family: "Minecraftia";
   font-size: 1rem;
-  color: yellow; 
+  color: gray; 
   font-weight: bold;
   white-space: nowrap;
 }
