@@ -9,6 +9,30 @@
   color: #fff;
   font-family: "Minecraftia";
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.project-tools {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tools-label {
+  font-family: "Minecraftia";
+  font-size: 0.9rem;
+  color: #aaa;
+  font-weight: bold;
+}
+
+.tools-logos img {
+  width: 50px;
+  height: 50    ;
+  object-fit: contain;
+  image-rendering: pixelated;
 }
 
 .project-header {
@@ -27,11 +51,19 @@
   border-radius: 6px;
 }
 
-.project-info h2 {
-  font-family: "Determination";
-  font-size: 2.3rem;
-  color: #fff;
-  margin: 0;
+.project-title-row {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 20px;
+}
+
+.project-status {
+  font-family: "Minecraftia";
+  font-size: 1rem;
+  color: gray; 
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 .project-genre {

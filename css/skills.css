@@ -28,7 +28,7 @@
   border-radius: 15px;
   padding: 25px 20px;
   width: 100%;
-  max-width: 240px;
+  max-width: 200px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -42,19 +42,35 @@
 }
 
 .skill-card h3 {
-  font-size: 1.2rem;
+  padding-top: 10px;
+  font-size: 1.1rem;
   color: #00ff7f;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
-.skill-card p {
-  font-size: 0.9rem;
-  color: #ccc;
-  line-height: 1.3;
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00ff7f, #00b894);
+  border-radius: 10px;
+  transition: width 1.2s ease;
+}
+
+
+.skill-card:hover .progress {
+  filter: brightness(1.3);
 }
 
 .skill-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(0, 255, 127, 0.25);
 }
-

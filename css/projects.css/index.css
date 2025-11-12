@@ -1,3 +1,24 @@
+.back-Btn {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  background-color: #1b1b1b;
+  color: #00ff7f;
+  font-family: "Determination";
+  text-decoration: none;
+  border: 2px solid #00ff7f;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 1.95rem;
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+
+.back-Btn:hover {
+  background-color: #00ff7f;
+  color: #1b1b1b;
+  transform: scale(1.05);
+}
 .projects-content {
   flex: 1;
   padding: 60px 40px;
@@ -25,7 +46,6 @@
 
 .project-card {
   background-color: #1e1c1b;
-  margin-top: ;
   border-radius: 15px;
   padding: 25px 20px;
   width: 100%;

@@ -11,3 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const progresses = document.querySelectorAll(".progress");
+
+  progresses.forEach(bar => {
+    const finalWidth = bar.dataset.progress + "%";
+    bar.style.width = "0%"; 
+    setTimeout(() => {
+      bar.style.width = finalWidth;
+    }, 200); 
+  });
+});

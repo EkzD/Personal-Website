@@ -7,7 +7,10 @@ const trackTitle = document.getElementById("track-title");
 const playlist = [
     { title: "Multo - Cup of Joe", src: "/assets/mp3/Multo - Cup Of Joe (AI Villager Cover) Music Video [hlq8VEG1R4E].mp3" },
     { title: "Multo - Cup of Joe", src: "/assets/music/lofi2.mp3" },
-    { title: "Lofi Track 3", src: "/assets/music/lofi3.mp3" }
+    { title: "Lofi Track 3", src: "/assets/music/lofi3.mp3" },
+    { title: "Lofi Track 3", src: "/assets/music/lofi3.mp3" },
+    { title: "Lofi Track 3", src: "/assets/music/lofi3.mp3"} ,
+    { title: "Lofi Track 3", src: "/assets/music/lofi3.mp3"}
 ];
 
 let currentTrack = 0;
